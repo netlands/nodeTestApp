@@ -1,0 +1,9 @@
+node_modules/
+readme.txt
+*.bak
+nodejs.log
+config.json
+nodejs-watchd.log
+npm-debug.log
+.*.sw?
+.sw?
