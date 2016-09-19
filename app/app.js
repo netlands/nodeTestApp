@@ -16,7 +16,7 @@ var hbs = exphbs.create({
         return new Handlebars.SafeString(out);
     }
   }
-});	
+});
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
@@ -46,8 +46,8 @@ app.use(function (err, req, res, next) {
     });
 });
 
-app.listen(3001, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(process.env.PORT, function () {
+  console.log('Example app listening on port ' + process.env.PORT + '!');
 });
 
 module.exports = app;
